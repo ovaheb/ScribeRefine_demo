@@ -145,7 +145,7 @@ if not openai.api_key:
     st.error("No API key set. Use secrets.toml or environment variable.")
     st.stop()
 
-img_path = "demo/logo.png"
+img_path = "logo.png"
 img_base64 = img_to_base64(img_path)
 if img_base64:
     st.sidebar.markdown(f'<img src="data:image/png;base64,{img_base64}" class="cover-glow">', unsafe_allow_html=True)
